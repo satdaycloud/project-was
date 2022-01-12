@@ -5,8 +5,8 @@ After=network.target syslog.target
 [Service]
 Type=forking
 
-User=osboxes
-Group=osboxes
+User=ec2-user
+Group=ec2-user
 ExecStart=/usr/local/bin/servicectl.sh petclinic startup
 ExecStop=/usr/local/bin/servicectl.sh petclinic shutdown
 
