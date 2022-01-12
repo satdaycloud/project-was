@@ -1,0 +1,11 @@
+# project
+apache-tomcat*/
+jdk*/
+
+# service
+logs/
+src/
+temp/
+webapps/
+work/
+

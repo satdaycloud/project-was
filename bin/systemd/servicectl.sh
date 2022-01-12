@@ -2,7 +2,7 @@
 
 SERVICE=$1
 MODE=$2
-PROJECT_HOME="/home/osboxes/project"
+PROJECT_HOME="/home/ec2-user/project"
 
 if [ $# -ne 2 ]
 then

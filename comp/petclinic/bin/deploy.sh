@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CATALINA_BASE="/home/osboxes/project/comp/petclinic"
+CATALINA_BASE="/home/ec2-user/project/comp/petclinic"
 
 # check if the service is running ...
 SERVICE_PID=`ps -ef | grep java | grep ${CATALINA_BASE} | grep -v grep | awk '{print $2}'`

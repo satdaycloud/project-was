@@ -26,7 +26,7 @@ if [ ! -z "${DELAY}" ]; then
   sleep $DELAY
 fi
 
-export PROJECT_HOME="/home/osboxes/project"
+export PROJECT_HOME="/home/ec2-user/project"
 export JAVA_HOME="${PROJECT_HOME}/jdk-11"
 export CATALINA_HOME="${PROJECT_HOME}/apache-tomcat-8.5.73"
 export CATALINA_BASE="${PROJECT_HOME}/comp/petclinic"
