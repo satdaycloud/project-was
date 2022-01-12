@@ -1,0 +1,17 @@
+[Unit]
+Description=Petclinic-Service
+After=network.target syslog.target
+
+[Service]
+Type=forking
+
+User=osboxes
+Group=osboxes
+ExecStart=/usr/local/bin/servicectl.sh petclinic startup
+ExecStop=/usr/local/bin/servicectl.sh petclinic shutdown
+
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
